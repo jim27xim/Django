@@ -37,7 +37,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'catalogoAnalisis'
+    'analisis',
+    'ckeditor',
 ]
 
 MIDDLEWARE = [
@@ -101,12 +102,19 @@ AUTH_PASSWORD_VALIDATORS = [
 ]
 
 
+#configuracion de CKeditor
+CKEDITOR_CONFIGS = {
+    'default': {
+        'toolbar': 'full',        
+    },
+}
+
 # Internationalization
 # https://docs.djangoproject.com/en/3.1/topics/i18n/
 
 LANGUAGE_CODE = 'es'
 
-TIME_ZONE = 'Amarica/Santiago'
+TIME_ZONE = 'America/Santiago'
 
 USE_I18N = True
 
